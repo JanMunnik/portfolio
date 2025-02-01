@@ -39,6 +39,7 @@
 		"@poppanator/sveltekit-svg": "^5.0.0",
 		"gsap": "^3.12.7",
 		"lenis": "^1.1.20",
-		"postcss-nesting": "^13.0.1"
+		"postcss-nesting": "^13.0.1",
+		"swiper": "^11.2.2"
 	}
 }

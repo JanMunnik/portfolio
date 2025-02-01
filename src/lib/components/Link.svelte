@@ -1,13 +1,16 @@
 <script lang="ts">
 	export { className as class };
 	export let theme: 'yellow' | 'blue' = 'yellow';
-	let elementState: 'idle' | 'hover' | 'focus' | 'active' = 'idle';
+	export let href = '';
+	export let target: '_blank' | '_self' = '_self';
 
+	let elementState: 'idle' | 'hover' | 'focus' | 'active' = 'idle';
 	let className = '';
 </script>
 
-<button
-	type="submit"
+<a
+	{target}
+	{href}
 	class="button-element relative z-0 flex h-12 w-4/5 items-center justify-center {className}"
 	class:theme-yellow={theme === 'yellow'}
 	class:theme-blue={theme === 'blue'}
@@ -16,8 +19,6 @@
 	on:mouseenter={() => (elementState = 'hover')}
 	on:mouseleave={() => (elementState = 'idle')}
 >
-	<!-- on:focus={() => (elementState = 'focus')}
-	on:blur={() => (elementState = 'idle')} -->
 	<div class="button-skew absolute left-[5%] top-0 -z-10 h-full w-full -skew-x-12 bg-current"></div>
 	<div
 		class="button-bg-skew absolute left-[10%] top-0 -z-20 h-full w-full -skew-x-12"
@@ -30,7 +31,7 @@
 	<div class="pl-[10%] text-white">
 		<slot />
 	</div>
-</button>
+</a>
 
 <style lang="postcss">
 	.button-element {

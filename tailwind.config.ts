@@ -14,29 +14,30 @@ export default {
 			'3xl': '2560px'
 		},
 		fontFamily: {
-			sans: ['montserrat', 'sans-serif'],
+			sans: ['bc-novatica-cyr', 'sans-serif'],
 			serif: ['yink', 'serif']
 		},
-		colors: {
-			grey: {
-				100: '#a3b6c6',
-				400: '#c7d4e0'
-			},
-			blue: {
-				100: '#000533',
-				400: '#1682d3',
-				800: '#2dbce8'
-			},
-			yellow: {
-				100: '#dd7f0e',
-				400: '#f7bb26'
-			},
-			white: '#ffffff',
-			black: '#000000'
-		},
 		extend: {
+			colors: {
+				grey: {
+					100: '#a3b6c6',
+					400: '#c7d4e0'
+				},
+				blue: {
+					100: '#000533',
+					400: '#1682d3',
+					800: '#2dbce8'
+				},
+				yellow: {
+					100: '#dd7f0e',
+					400: '#f7bb26'
+				},
+				white: '#ffffff',
+				black: '#000000'
+			},
 			fontSize: {
-				'fluid-m': 'clamp(1rem, 1.553vw + 0.636rem, 2.5rem)'
+				'fluid-m': 'clamp(1rem, 1.553vw + 0.636rem, 2.5rem)',
+				'fluid-heading-3xl': 'clamp(1.5rem, 1.553vw + 1.136rem, 3rem)'
 			},
 			spacing: {
 				'fluid-main-x': 'clamp(2rem, 5.696vw + 0.665rem, 7.5rem)'
