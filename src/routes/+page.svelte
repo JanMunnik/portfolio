@@ -18,7 +18,7 @@
 </svelte:head>
 
 <div>
-	<section class="relative flex h-[25vh] w-full flex-col justify-between px-fluid-main-x pb-4 pt-8">
+	<section class="relative flex h-[30vh] w-full flex-col justify-between px-fluid-main-x pb-4 pt-8">
 		<img
 			class="absolute left-0 top-0 h-full w-full object-cover"
 			src="/images/profilePic.png"

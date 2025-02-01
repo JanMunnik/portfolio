@@ -4,12 +4,14 @@
 	import gsap from 'gsap';
 	import { onMount } from 'svelte';
 	import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+	import { page } from '$app/stores';
 
 	import Button from '$lib/components/Button.svelte';
 
 	import Logo from '$lib/assets/icons/logo.svg?component';
 	import MailIcon from '$lib/assets/icons/mail-icon.svg?component';
 	import LinkedInIcon from '$lib/assets/icons/linkedin-icon.svg?component';
+	import Link from '$lib/components/Link.svelte';
 </script>
 
 <script lang="ts">
@@ -17,14 +19,21 @@
 	let menuOpen = $state(false);
 	let date = new Date();
 	let currentYear = date.getFullYear();
+	let footer: HTMLElement;
 
 	onMount(() => {
+		gsap.registerPlugin(ScrollTrigger);
 		const lenis = new Lenis();
+		let linkElement = document.querySelector('.link-component');
 
 		// IF YOU WANNA DO SOMETHING WITH SCROLL UP OR DOWN USE COMMENTED OUT CODE
 
 		// lenis.on('scroll', (e) => {
-		// 	console.log(e);
+		// 	if (e.direction === -1) {
+		// 		console.log('up');
+		// 	} else {
+		// 		console.log('down');
+		// 	}
 		// });
 
 		lenis.on('scroll', ScrollTrigger.update);
@@ -34,6 +43,26 @@
 		});
 
 		gsap.ticker.lagSmoothing(0);
+
+		if (linkElement && footer) {
+			gsap.to(linkElement, {
+				scrollTrigger: {
+					trigger: footer,
+					start: 'top bottom',
+					end: 'bottom bottom',
+					onEnter: () => {
+						if (linkElement) {
+							gsap.to(linkElement, { opacity: 0, y: 10, duration: 0.5 });
+						}
+					},
+					onLeaveBack: () => {
+						if (linkElement) {
+							gsap.to(linkElement, { opacity: 1, y: 0, duration: 0.5 });
+						}
+					}
+				}
+			});
+		}
 	});
 </script>
 
@@ -85,7 +114,7 @@
 				<a
 					class="transition-colors hover:text-yellow-400 focus:text-yellow-400 active:text-yellow-100 active:duration-100"
 					onclick={() => (menuOpen = false)}
-					href="/graphic">My expertise</a
+					href="/#work">My expertise</a
 				>
 			</li>
 			<li>
@@ -99,11 +128,18 @@
 	</nav>
 </header>
 
-<main class="overflow-x-hidden pt-[8vh]">
+<main class="relative overflow-x-hidden pt-[8vh]">
+	<Link
+		class="link-component !fixed bottom-fluid-main-x right-fluid-main-x z-30 w-[50%] transition-opacity duration-300"
+		href={`${$page.url.pathname}#contact`}
+	>
+		Shoot me a message!
+	</Link>
+
 	{@render children()}
 </main>
 
-<footer class="bg-blue-100 px-fluid-main-x py-8">
+<footer bind:this={footer} class="bg-blue-100 px-fluid-main-x py-8">
 	<div class="flex gap-6">
 		<h2 class="uppercase">Contact</h2>
 		<div class="flex items-center gap-4">
