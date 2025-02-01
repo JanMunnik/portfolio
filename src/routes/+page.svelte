@@ -44,7 +44,10 @@
 		</ul>
 	</section>
 
-	<section class="swiper-section flex flex-nowrap justify-center gap-10 overflow-x-scroll py-12">
+	<section
+		id="work"
+		class="swiper-section flex flex-nowrap justify-center gap-10 overflow-x-scroll py-12"
+	>
 		<swiper-container
 			class="mySwiper w-[125vw]"
 			slides-per-view="2"
