@@ -17,6 +17,7 @@
 		"@eslint/js": "^9.18.0",
 		"@sveltejs/adapter-node": "^5.2.12",
 		"@sveltejs/adapter-static": "^3.0.8",
+		"@sveltejs/adapter-vercel": "^5.7.1",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@tailwindcss/typography": "^0.5.16",
@@ -38,6 +39,8 @@
 	},
 	"dependencies": {
 		"@poppanator/sveltekit-svg": "^5.0.0",
+		"@sanity/client": "^7.0.0",
+		"@sanity/image-url": "^1.1.0",
 		"gsap": "^3.12.7",
 		"lenis": "^1.1.20",
 		"postcss-nesting": "^13.0.1",

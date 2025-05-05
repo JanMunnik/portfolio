@@ -21,7 +21,7 @@
 	<section class="relative flex h-[30vh] w-full flex-col justify-between px-fluid-main-x pb-4 pt-8">
 		<img
 			class="absolute left-0 top-0 h-full w-full object-cover"
-			src="/images/profilePic.png"
+			src="/images/profile.webp"
 			alt="Jan de Munnik (Me) At work."
 		/>
 		<div class="absolute left-0 top-0 h-full w-full bg-white/30"></div>
@@ -58,7 +58,7 @@
 			<swiper-slide>
 				<WorkCard
 					class="h-[40vh] w-full shrink-0"
-					imageSrc="/images/profilePic.png"
+					imageSrc="/images/profile.webp"
 					href="/graphic"
 					imageAlt="Graphic Design">Graphic Design</WorkCard
 				>
@@ -67,7 +67,7 @@
 			<swiper-slide>
 				<WorkCard
 					class="h-[40vh] w-full shrink-0"
-					imageSrc="/images/profilePic.png"
+					imageSrc="/images/profile.webp"
 					imageAlt="UX Design"
 					href="/ux">UX</WorkCard
 				>
@@ -76,7 +76,7 @@
 			<swiper-slide>
 				<WorkCard
 					class="h-[40vh] w-full shrink-0"
-					imageSrc="/images/profilePic.png"
+					imageSrc="/images/profile.webp"
 					imageAlt="UI Design"
 					href="/ui">UI</WorkCard
 				>
