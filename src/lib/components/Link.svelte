@@ -8,7 +8,9 @@
 	let className = '';
 </script>
 
-<a
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<svelte:element
+	this={href ? 'a' : 'button'}
 	{target}
 	{href}
 	class="button-element relative z-0 flex h-12 w-4/5 items-center justify-center {className}"
@@ -31,7 +33,7 @@
 	<div class="pl-[10%] text-white">
 		<slot />
 	</div>
-</a>
+</svelte:element>
 
 <style lang="postcss">
 	.button-element {

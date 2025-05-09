@@ -66,10 +66,12 @@
 	});
 </script>
 
-<header class="fixed z-50 flex w-full justify-center bg-blue-100 px-fluid-main-x py-6">
+<header
+	class="z-50 flex w-full items-center justify-center bg-blue-100 px-fluid-main-x py-6 xl:py-8 2xl:py-10"
+>
 	<a
 		href="/"
-		class="hover: left-0 ml-auto mr-auto h-6 w-6 text-grey-400 transition-colors hover:text-yellow-400 focus:text-yellow-400 active:text-yellow-100 active:duration-100"
+		class="hover: left-0 ml-auto mr-auto h-6 w-6 text-grey-400 transition-colors hover:text-yellow-400 focus:text-yellow-400 active:text-yellow-100 active:duration-100 2xl:h-8 2xl:w-8"
 	>
 		<Logo />
 	</a>
@@ -81,7 +83,7 @@
 		}}
 		aria-label="menu-button"
 		type="button"
-		class="menu-button absolute right-fluid-main-x z-50 ml-auto flex h-6 w-6 flex-col justify-center gap-1.5"
+		class="menu-button absolute right-fluid-main-x z-50 ml-auto flex h-6 w-6 flex-col justify-center gap-1.5 2xl:h-8 2xl:w-8"
 	>
 		<span class="hamburger-line {menuOpen ? 'absolute rotate-45' : ' relative rotate-0'}"></span>
 		<span
@@ -128,9 +130,9 @@
 	</nav>
 </header>
 
-<main class="relative overflow-x-hidden pt-[8vh]">
+<main class="relative overflow-x-hidden">
 	<Link
-		class="link-component !fixed bottom-fluid-main-x right-fluid-main-x z-30 w-[50%] transition-opacity duration-300"
+		class="link-component !fixed bottom-fluid-main-x right-fluid-main-x z-30 w-[50%] transition-opacity duration-300 l:max-w-[25%] xl:bottom-[10%] xl:max-w-[15%] 2xl:max-w-[10%]"
 		href={`${$page.url.pathname}#contact`}
 	>
 		Shoot me a message!
@@ -160,12 +162,12 @@
 		id="contact"
 		action="https://formspree.io/f/movjwwld"
 		method="POST"
-		class="mt-6 flex flex-col gap-4"
+		class="mt-6 flex flex-col gap-4 l:max-w-[50%] 2xl:max-w-[40%]"
 	>
 		<div class="flex flex-col gap-2 text-fluid-m text-black">
 			<label class="text-white" for="name">Name</label>
 			<input
-				class="py-1 pl-2 text-[14px]"
+				class="py-1 pl-2 text-[0.875rem] xl:py-2 xl:text-[1rem] 2xl:py-3 2xl:text-[1.5rem]"
 				placeholder="Your name"
 				type="name"
 				name="name"
@@ -177,7 +179,7 @@
 		<div class="flex flex-col gap-2 text-fluid-m text-black">
 			<label class="text-white" for="email">E-mail</label>
 			<input
-				class="py-1 pl-2 text-[14px]"
+				class="py-1 pl-2 text-[0.875rem] xl:py-2 xl:text-[1rem] 2xl:py-3 2xl:text-[1.5rem]"
 				placeholder="Type here"
 				type="email"
 				name="email"
@@ -189,7 +191,7 @@
 		<div class="flex flex-col gap-2 text-fluid-m text-black">
 			<label class="text-white" for="message">Message</label>
 			<textarea
-				class="h-[15vh] py-1 pl-2 text-[14px]"
+				class="h-[15vh] py-1 pl-2 text-[0.875rem] xl:py-2 xl:text-[1rem] 2xl:py-3 2xl:text-[1.5rem]"
 				placeholder="Type here"
 				name="message"
 				id="message"
@@ -200,18 +202,24 @@
 		<Button class="mt-6 w-[50%]">Send message</Button>
 	</form>
 
-	<p class="mt-10 text-[14px]">
+	<p
+		class="mt-10 text-[0.875rem] l:max-w-[50%] xl:py-2 xl:text-[1rem] 2xl:max-w-[40%] 2xl:py-3 2xl:text-[1.5rem]"
+	>
 		<span class="block">Hey there!</span>
 		What nice to see that you've arrived at my contact form! If you have any questions, comments or just
 		want to say start a conversation, feel free to message me here!
 	</p>
 
-	<p class="mt-4 text-[14px]">
+	<p
+		class="mt-4 text-[0.875rem] l:max-w-[50%] xl:py-2 xl:text-[1rem] 2xl:max-w-[40%] 2xl:py-3 2xl:text-[1.5rem]"
+	>
 		You can also find me on LinkedIn through the icon above or send me an email through the mail
 		icon above!
 	</p>
 
-	<p class="mt-16 text-center text-[12px]">© {currentYear} Jan de Munnik</p>
+	<p class="mt-16 text-center text-[0.75rem] xl:text-[0.875rem] 2xl:text-[1rem]">
+		© {currentYear} Jan de Munnik
+	</p>
 </footer>
 
 <style lang="postcss">
