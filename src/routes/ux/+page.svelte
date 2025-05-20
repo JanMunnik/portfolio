@@ -7,11 +7,10 @@
 
 <script lang="ts">
 	const projects: Project[] = page.data.projects;
-	let projectItems = graphicItems.graphicItems;
 </script>
 
 <svelte:head>
-	<title>Graphic Design | Jan de Munnik</title>
+	<title>UX | Jan de Munnik</title>
 	<meta
 		name="description"
 		content="Jan de Munnik is a professional Graphic, UX & UI Designer offering creative and innovative design solutions. Explore my portfolio to see my work and get in touch for collaborations."
@@ -19,7 +18,7 @@
 </svelte:head>
 
 <div class="min-h-screen px-fluid-main-x pb-16 pt-8 xl:pt-32 3xl:pt-48">
-	<h1 class="mb-6 text-fluid-heading-3xl font-bold uppercase text-blue-100">Graphic</h1>
+	<h1 class="mb-6 text-fluid-heading-3xl font-bold uppercase text-blue-100">UX</h1>
 	<section class="grid grid-cols-1 items-center gap-8 l:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
 		{#each projects as project}
 			<WorkCard
