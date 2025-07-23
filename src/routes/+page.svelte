@@ -23,7 +23,7 @@
 	>
 		<img
 			class="absolute left-0 top-0 h-full w-full object-cover"
-			src="/images/profile.webp"
+			src="/images/profile.jpg"
 			alt="Jan de Munnik (Me) At work."
 		/>
 		<div class="absolute left-0 top-0 h-full w-full bg-white/30"></div>
@@ -64,7 +64,7 @@
 			<swiper-slide>
 				<WorkCard
 					class="h-[40vh] w-full shrink-0 xl:h-full"
-					imageSrc="https://images.unsplash.com/photo-1626785774573-4b799315345d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHx8MA%3D%3D"
+					imageSrc="/images/graphic-thumbnail.webp"
 					href="/graphic"
 					imageAlt="Graphic Design">Graphic Design</WorkCard
 				>
@@ -73,7 +73,7 @@
 			<swiper-slide>
 				<WorkCard
 					class="h-[40vh] w-full shrink-0 xl:h-full"
-					imageSrc="https://miro.medium.com/v2/resize:fit:1400/1*JWStOGfx3DvZDDphuMNvgQ.jpeg"
+					imageSrc="/images/ux-thumbnail.png"
 					imageAlt="UX Design"
 					href="/ux">UX</WorkCard
 				>
@@ -82,7 +82,7 @@
 			<swiper-slide>
 				<WorkCard
 					class="h-[40vh] w-full shrink-0 xl:h-full"
-					imageSrc="https://view.subpage.app/app/company/C532b8873cc5442e2b1f2265b77a7d7dc/domain/MTiT0jFlGh/page/M6K4TirmGh/glossary/M36e5669dfd4b52477c65571a1479acd81676987587657/file/Mb4de6e716cf9eb420a1f39b7a0b320481707989448555.jpeg"
+					imageSrc="/images/ui-thumbnail.webp"
 					imageAlt="UI Design"
 					href="/ui">UI</WorkCard
 				>
