@@ -19,10 +19,10 @@
 
 <div>
 	<section
-		class="relative flex h-[30vh] w-full flex-col justify-between px-fluid-main-x pb-4 pt-8 l:pt-12 xl:h-[50vh] xl:pt-16 2xl:pt-20 3xl:pt-24"
+		class="relative flex h-[30vh] w-full flex-col justify-between overflow-hidden px-fluid-main-x pb-4 pt-8 l:pt-12 xl:h-[50vh] xl:pt-16 2xl:pt-20 3xl:pt-24"
 	>
 		<img
-			class="absolute left-0 top-0 h-full w-full object-cover"
+			class="absolute left-0 top-0 h-full w-full object-cover xl:-bottom-3/4 xl:top-auto xl:h-[175%]"
 			src="/images/profile.jpg"
 			alt="Jan de Munnik (Me) At work."
 		/>
@@ -75,7 +75,7 @@
 					class="h-[40vh] w-full shrink-0 xl:h-full"
 					imageSrc="/images/ux-thumbnail.png"
 					imageAlt="UX Design"
-					href="/ux">UX</WorkCard
+					href="/ux">User Experience</WorkCard
 				>
 			</swiper-slide>
 
@@ -84,7 +84,7 @@
 					class="h-[40vh] w-full shrink-0 xl:h-full"
 					imageSrc="/images/ui-thumbnail.webp"
 					imageAlt="UI Design"
-					href="/ui">UI</WorkCard
+					href="/ui">User Interface</WorkCard
 				>
 			</swiper-slide>
 		</swiper-container>
